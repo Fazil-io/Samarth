@@ -1,4 +1,4 @@
-# GovInnovate: Connecting Government Challenges with Startup Innovation
+# Samarth: Connecting Government Challenges with Startup Innovation
 
 > **Maharashtra State Innovation Society (MSInS) | Government of Maharashtra**  
 > An end-to-end digital innovation-procurement platform bridging the divide between government operational challenges and startup solutions through controlled funded pilots, milestone-based escrow funding, transparent validation, and Rule 149 GFR Innovation Exemption scale-up.
@@ -14,7 +14,7 @@ Government departments frequently face complex operational pain points (water le
 4. Validate results with third-party technical audits
 5. Transition validated innovations directly into state procurement and multi-district scale-up
 
-**GovInnovate** digitizes this complete 7-stage innovation lifecycle with full transparency and tamper-evident audit logging.
+**Samarth** digitizes this complete 7-stage innovation lifecycle with full transparency and tamper-evident audit logging.
 
 ---
 
@@ -86,4 +86,3 @@ To build for production:
 npm run build
 npm run preview
 ```
-# Samarth

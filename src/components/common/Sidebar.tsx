@@ -124,9 +124,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileMenuOpen, onCloseMobil
           <div className="lg:hidden flex items-center justify-between pb-3 border-b border-slate-100">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-gov-700 text-white font-bold flex items-center justify-center text-sm">
-                GI
+                SM
               </div>
-              <span className="font-bold text-sm text-slate-900">GovInnovate Menu</span>
+              <span className="font-bold text-sm text-slate-900">Samarth Menu</span>
             </div>
             <button
               onClick={onCloseMobileMenu}
@@ -199,7 +199,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileMenuOpen, onCloseMobil
           <div className="flex items-center gap-2 text-[11px] text-slate-500">
             <ShieldCheck className="w-4 h-4 text-gov-600 shrink-0" />
             <div>
-              <div className="font-semibold text-slate-700">GovInnovate v2.4</div>
+              <div className="font-semibold text-slate-700">Samarth v2.4</div>
               <div>Gov of Maharashtra Sandbox</div>
             </div>
           </div>

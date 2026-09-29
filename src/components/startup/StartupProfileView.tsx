@@ -171,7 +171,7 @@ export const StartupProfileView: React.FC = () => {
             </span>
           </div>
           <span className="text-[11px] text-slate-400">
-            Registered on GovInnovate Platform: March 2025
+            Registered on Samarth Platform: March 2025
           </span>
         </div>
       </div>

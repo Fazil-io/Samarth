@@ -167,7 +167,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenChallengeDetail,
             End-to-End Pipeline
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            How GovInnovate Works
+            How Samarth Works
           </h2>
           <p className="text-sm text-slate-600">
             A structured 6-stage lifecycle bridging the gap between public problem statements and commercial public procurement.
@@ -243,7 +243,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenChallengeDetail,
         <div className="max-w-7xl mx-auto space-y-8 sm:space-y-10">
           <div className="text-center space-y-2 max-w-2xl mx-auto">
             <div className="text-xs font-bold uppercase tracking-wider text-teal-700">
-              Why GovInnovate
+              Why Samarth
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
               Solving the Government–Startup Procurement Divide

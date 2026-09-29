@@ -598,7 +598,7 @@ export const CreateChallengeModal: React.FC<CreateChallengeModalProps> = ({ isOp
                   <span>Ready for Departmental Publication</span>
                 </div>
                 <p className="text-emerald-800 leading-relaxed">
-                  Upon publishing, this challenge will be immediately broadcast on the GovInnovate Marketplace. Verified startups across Maharashtra will receive smart-match notifications.
+                  Upon publishing, this challenge will be immediately broadcast on the Samarth Marketplace. Verified startups across Maharashtra will receive smart-match notifications.
                 </p>
               </div>
             </div>

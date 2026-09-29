@@ -12,10 +12,10 @@ export const Footer: React.FC = () => {
           {/* Brand and Mission */}
           <div className="space-y-3 md:col-span-1">
             <div className="flex items-center gap-2 text-white font-bold text-base">
-              <div className="w-7 h-7 rounded-lg bg-gov-600 text-white flex items-center justify-center text-xs">
-                GI
+              <div className="w-7 h-7 rounded-lg bg-gov-600 text-white flex items-center justify-center text-xs font-bold">
+                SM
               </div>
-              <span>GovInnovate</span>
+              <span>Samarth</span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed">
               Maharashtra State Innovation Society (MSInS) digital platform connecting Government challenges with startup innovations for controlled funded pilots, validation, and procurement.
@@ -144,7 +144,7 @@ export const Footer: React.FC = () => {
 
         <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
           <div>
-            © 2026 Government of Maharashtra. All rights reserved. GovInnovate Platform.
+            © 2026 Government of Maharashtra. All rights reserved. Samarth Platform.
           </div>
           <div className="flex items-center gap-4">
             <span className="hover:text-slate-400 cursor-pointer">Privacy Policy</span>

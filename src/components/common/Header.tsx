@@ -126,12 +126,12 @@ export const Header: React.FC<HeaderProps> = ({ onToggleMobileMenu, isMobileMenu
             className="flex items-center gap-2 sm:gap-3 cursor-pointer group min-w-0"
           >
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-gov-700 to-gov-900 flex items-center justify-center text-white font-bold shadow-md shadow-gov-900/10 group-hover:scale-105 transition-transform shrink-0">
-              <span className="text-lg sm:text-xl tracking-tight">GI</span>
+              <span className="text-lg sm:text-xl tracking-tight">SM</span>
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <span className="text-base sm:text-lg font-extrabold tracking-tight text-slate-900 group-hover:text-gov-700 transition-colors truncate">
-                  GovInnovate
+                  Samarth
                 </span>
                 <span className="hidden xs:inline-block px-1.5 py-0.5 text-[9px] font-bold rounded bg-gov-100 text-gov-800 tracking-wide uppercase shrink-0">
                   MSInS

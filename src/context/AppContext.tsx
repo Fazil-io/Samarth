@@ -77,7 +77,11 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Load state from localStorage or use initial mock data
   const [currentRole, setRoleState] = useState<UserRole>(() => {
-    return (localStorage.getItem('govinnovate_role') as UserRole) || 'public';
+    return (
+      (localStorage.getItem('samarth_role') as UserRole) ||
+      (localStorage.getItem('govinnovate_role') as UserRole) ||
+      'public'
+    );
   });
   
   const [activeTab, setActiveTab] = useState<string>('dashboard');
@@ -86,78 +90,78 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [toasts, setToasts] = useState<ToastState[]>([]);
 
   const [challenges, setChallenges] = useState<Challenge[]>(() => {
-    const saved = localStorage.getItem('govinnovate_challenges');
+    const saved = localStorage.getItem('samarth_challenges') || localStorage.getItem('govinnovate_challenges');
     return saved ? JSON.parse(saved) : INITIAL_CHALLENGES;
   });
 
   const [startups, setStartups] = useState<StartupProfile[]>(() => {
-    const saved = localStorage.getItem('govinnovate_startups');
+    const saved = localStorage.getItem('samarth_startups') || localStorage.getItem('govinnovate_startups');
     return saved ? JSON.parse(saved) : INITIAL_STARTUPS;
   });
 
   const [solutions, setSolutions] = useState<Solution[]>(() => {
-    const saved = localStorage.getItem('govinnovate_solutions');
+    const saved = localStorage.getItem('samarth_solutions') || localStorage.getItem('govinnovate_solutions');
     return saved ? JSON.parse(saved) : INITIAL_SOLUTIONS;
   });
 
   const [pilots, setPilots] = useState<Pilot[]>(() => {
-    const saved = localStorage.getItem('govinnovate_pilots');
+    const saved = localStorage.getItem('samarth_pilots') || localStorage.getItem('govinnovate_pilots');
     return saved ? JSON.parse(saved) : INITIAL_PILOTS;
   });
 
   const [procurementRecords, setProcurementRecords] = useState<ProcurementRecord[]>(() => {
-    const saved = localStorage.getItem('govinnovate_procurement');
+    const saved = localStorage.getItem('samarth_procurement') || localStorage.getItem('govinnovate_procurement');
     return saved ? JSON.parse(saved) : INITIAL_PROCUREMENT_RECORDS;
   });
 
   const [scaleUpProjects, setScaleUpProjects] = useState<ScaleUpProject[]>(() => {
-    const saved = localStorage.getItem('govinnovate_scaleup');
+    const saved = localStorage.getItem('samarth_scaleup') || localStorage.getItem('govinnovate_scaleup');
     return saved ? JSON.parse(saved) : INITIAL_SCALEUP_PROJECTS;
   });
 
   const [templates] = useState<TemplateItem[]>(INITIAL_TEMPLATES);
 
   const [auditLogs, setAuditLogs] = useState<AuditLog[]>(() => {
-    const saved = localStorage.getItem('govinnovate_audit');
+    const saved = localStorage.getItem('samarth_audit') || localStorage.getItem('govinnovate_audit');
     return saved ? JSON.parse(saved) : INITIAL_AUDIT_LOGS;
   });
 
   const [notifications, setNotifications] = useState<NotificationItem[]>(() => {
-    const saved = localStorage.getItem('govinnovate_notifs');
+    const saved = localStorage.getItem('samarth_notifs') || localStorage.getItem('govinnovate_notifs');
     return saved ? JSON.parse(saved) : INITIAL_NOTIFICATIONS;
   });
 
   // Sync to localStorage
   useEffect(() => {
-    localStorage.setItem('govinnovate_role', currentRole);
+    localStorage.setItem('samarth_role', currentRole);
   }, [currentRole]);
 
   useEffect(() => {
-    localStorage.setItem('govinnovate_challenges', JSON.stringify(challenges));
+    localStorage.setItem('samarth_challenges', JSON.stringify(challenges));
   }, [challenges]);
 
   useEffect(() => {
-    localStorage.setItem('govinnovate_solutions', JSON.stringify(solutions));
+    localStorage.setItem('samarth_solutions', JSON.stringify(solutions));
   }, [solutions]);
 
   useEffect(() => {
-    localStorage.setItem('govinnovate_pilots', JSON.stringify(pilots));
+    localStorage.setItem('samarth_pilots', JSON.stringify(pilots));
   }, [pilots]);
 
   useEffect(() => {
-    localStorage.setItem('govinnovate_procurement', JSON.stringify(procurementRecords));
+    localStorage.setItem('samarth_procurement', JSON.stringify(procurementRecords));
   }, [procurementRecords]);
 
   useEffect(() => {
-    localStorage.setItem('govinnovate_scaleup', JSON.stringify(scaleUpProjects));
+    localStorage.setItem('samarth_scaleup', JSON.stringify(scaleUpProjects));
   }, [scaleUpProjects]);
 
   useEffect(() => {
-    localStorage.setItem('govinnovate_audit', JSON.stringify(auditLogs));
+    localStorage.setItem('samarth_audit', JSON.stringify(auditLogs));
   }, [auditLogs]);
 
   useEffect(() => {
-    localStorage.setItem('govinnovate_notifs', JSON.stringify(notifications));
+    localStorage.setItem('samarth_notifs', JSON.stringify(notifications));
   }, [notifications]);
 
   const showToast = (message: string, type: 'success' | 'info' | 'warning' | 'error' = 'info') => {

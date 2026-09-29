@@ -118,7 +118,7 @@ export const DemoGuideModal: React.FC = () => {
               <Sparkles className="w-6 h-6" />
             </div>
             <div>
-              <h2 className="text-xl font-bold">GovInnovate Interactive Demonstration Guide</h2>
+              <h2 className="text-xl font-bold">Samarth Interactive Demonstration Guide</h2>
               <p className="text-xs text-blue-200">
                 End-to-End Workflow: Challenge → Startup Discovery → Evaluation → Pilot → Validation → Procurement → Scale-Up
               </p>
